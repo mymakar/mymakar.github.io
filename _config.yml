@@ -18,8 +18,8 @@ description: A virtual proof that name is awesome!
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  I am a second year PhD student at the Computer Science and Artificial Intelligence Laboratory. 
-# avatar 
+  
+  # avatar 
 avatar: "/img/mmlogo.png"
 
 # --- Footer options --- #
