@@ -1414,8 +1414,9 @@ a.bg-danger:focus {
 }
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: left;
+    list-style-position: inside;
 }
 ul ul,
 ol ul,
