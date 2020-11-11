@@ -1,0 +1,31 @@
+# jemdoc: menu{MENU}{index.html}, addcss{table.css}
+==Maggie Makar
+
+~~~
+{}{img_left}{img/pictwitter.png}{alt text}{200}{200}
+PhD candidate at [https://www.csail.mit.edu/ CSAIL, MIT]\n
+E-mail: mmakar \[at\] mit \[dot\] edu \n
+Twitter: [https://twitter.com/maggiemakar @Maggiemakar] \n
+CV: As of [res_10_2020.pdf October 2020] \n
+[https://scholar.google.com/citations?user=bmlgkM4AAAAJ&hl=en Google scholar profile] \n
+~~~
+
+== About me
+I am a member of the [http://ddig.csail.mit.edu/ Clinical and Applied ML] group at CSAIL, led by [https://people.csail.mit.edu/guttag/ John Guttag]. I study machine learning, causal inference, and the intersection between the two. My work focuses on building data-efficient causal inference methods in resource-constrained settings, and building robust predictive ML models using ideas from causality.
+
+== Mentorship
+- Meghana Kameneni
+- Agni Kumar \[[http://dspace.mit.edu/handle/1721.1/127420 thesis]\]
+- Advaith Anand \[[http://dspace.mit.edu/handle/1721.1/122999 thesis]\]
+- Emily Mu \[[http://dspace.mit.edu/handle/1721.1/123046 thesis]\] \[[https://academic.oup.com/ofid/article/6/Supplement_2/S824/5606058 OFID abstract]\]
+
+== Recent News
+
+~~~
+{}{table}{news_table}
+Sept 21, 2020  | I will be presenting recent work at Microsoft's [https://www.microsoft.com/en-us/research/event/ai-breakthroughs-2020/ AI breakthroughs] today ||
+July 16, 2020  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 causal bounds] at ICML, 9am and 8pm EST ||
+June 22, 2020 | I will be giving an invited talk on our work on predicting infections at the [https://www.microsoft.com/en-us/research/event/tracworkshop/ Trustworthy and Robust AI workshop] ||
+June 2020  | I will be spending this summer at Google Brain, working with [https://www.alexdamour.com/ Alex D'Amour] ||
+June 2020 | Our [https://arxiv.org/abs/1910.04817 paper] on causal bound estimation has been accepted at ICML 2020
+~~~
