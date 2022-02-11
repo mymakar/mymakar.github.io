@@ -12,7 +12,7 @@ CV: As of [res_10_2020.pdf October 2020] \n
 ~~~
 
 == About me
-I study machine learning, causal inference, and the intersection between the two. My work focuses on building data-efficient causal inference methods in resource-constrained settings, and building robust predictive ML models using ideas from causality. Prior to UM, I completed my PhD in CSAIl, MIT and my undergrad in Math and economics at Umass Amherst.
+I study machine learning, causal inference, and the intersection between the two. My work focuses on building data-efficient causal inference methods in resource-constrained settings, and building robust predictive ML models using ideas from causality. Prior to UM, I completed my PhD in CSAIl, MIT and my bachelors degree in math and economics at Umass Amherst.
 
 == Mentorship
 - Jiayun Zheng
@@ -45,7 +45,7 @@ Full list of publications [publications.html here]
 ~~~
 {}{table}{news_table}
 Jan, 2022 | Our paper on causally motivated shortcut removal was accepted at AISTATS! ||
-Sept, 2021 | I will be starting my position as a visitng researcher at UM ||
+Sept, 2021 | I will be starting my position as a visitng researcher at MSR ||
 August, 2021 | I will be starting my position as the PPFP at UM ||
 July, 2021  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 predicting infectious diseases] at ICML ||
 Sept 21, 2020  | I will be presenting recent work at Microsoft's [https://www.microsoft.com/en-us/research/event/ai-breakthroughs-2020/ AI breakthroughs] today ||
