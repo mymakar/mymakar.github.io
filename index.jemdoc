@@ -3,17 +3,19 @@
 
 ~~~
 {}{img_left}{img/pictwitter.png}{alt text}{200}{200}
-PhD candidate at [https://www.csail.mit.edu/ CSAIL, MIT]\n
-E-mail: mmakar \[at\] mit \[dot\] edu \n
+Presidential postdoctoral fellow/Assistant professor in CSE, University of Michigan \n
+Consulting researcher at Microsoft Research \n
+E-mail: mmakar \[at\] umich \[dot\] edu \n
 Twitter: [https://twitter.com/maggiemakar @Maggiemakar] \n
 CV: As of [res_10_2020.pdf October 2020] \n
 [https://scholar.google.com/citations?user=bmlgkM4AAAAJ&hl=en Google scholar profile] \n
 ~~~
 
 == About me
-I am a member of the [http://ddig.csail.mit.edu/ Clinical and Applied ML] group at CSAIL, led by [https://people.csail.mit.edu/guttag/ John Guttag]. I study machine learning, causal inference, and the intersection between the two. My work focuses on building data-efficient causal inference methods in resource-constrained settings, and building robust predictive ML models using ideas from causality.
+I study machine learning, causal inference, and the intersection between the two. My work focuses on building data-efficient causal inference methods in resource-constrained settings, and building robust predictive ML models using ideas from causality. Prior to UM, I completed my PhD in CSAIl, MIT and my undergrad in Math and economics at Umass Amherst.
 
 == Mentorship
+- Jiayun Zheng
 - Meghana Kameneni
 - Agni Kumar \[[http://dspace.mit.edu/handle/1721.1/127420 thesis]\]
 - Advaith Anand \[[http://dspace.mit.edu/handle/1721.1/122999 thesis]\]
@@ -21,6 +23,14 @@ I am a member of the [http://ddig.csail.mit.edu/ Clinical and Applied ML] group 
 
 == Selected Publications
 Full list of publications [publications.html here]
+
+- Causally-motivated shortcut removal using auxiliary labels \n
+*M. Makar*, B. Packer, D. Moldovan, D. Blalock, Y. Halpern, A. D'Amour \n
+*AISTATS*, 2022  \[[https://arxiv.org/abs/2105.06422 paper]\]
+
+- Exploiting structured data for learning contagious diseases under incomplete testing \n
+*M. Makar*, L. West, D. Hooper, E. Horvitz, E. Shenoy, J. Guttag \n
+*ICML*, 2021, \[[https://proceedings.mlr.press/v139/makar21a.html paper]\]
 
 - Estimation of Bounds on Potential Outcomes for Decision Making \n
 *M. Makar*, F. Johansson, J. Guttag, D. Sontag \n
@@ -30,23 +40,14 @@ Full list of publications [publications.html here]
 *M. Makar*, A. Swaminathan, E. Kiciman \n
 *AAAI*, 2019 \[[https://ojs.aaai.org//index.php/AAAI/article/view/4375 paper]\]
 
-
-- Learning the Probability of Activation in the Presence of Latent spreaders \n
-*M. Makar*, J. Guttag, J. Wiens \n
-*AAAI*, 2018  \[[https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16980 paper]\]
-
-
-- Estimating the Causal Effectof Fine Particulate Matter Levels on Death and Hospitalization: Are Levels Below the Safety Standards Harmful? \n
-*M. Makar* \*, J. Antonelli\*, Q. Di, J. Schwartz, D. Cutler, F. Dominici \n
-*Epidemiology*, 2017 \[[https://pubmed.ncbi.nlm.nih.gov/28768298/ paper]\]
-
 == Recent News
 
 ~~~
 {}{table}{news_table}
+Jan, 2022 | Our paper on causally motivated shortcut removal was accepted at AISTATS! ||
+Sept, 2021 | I will be starting my position as a visitng researcher at UM ||
+August, 2021 | I will be starting my position as the PPFP at UM ||
+July, 2021  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 predicting infectious diseases] at ICML ||
 Sept 21, 2020  | I will be presenting recent work at Microsoft's [https://www.microsoft.com/en-us/research/event/ai-breakthroughs-2020/ AI breakthroughs] today ||
-July 16, 2020  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 causal bounds] at ICML, 9am and 8pm EST ||
-June 22, 2020 | I will be giving an invited talk on our work on predicting infections at the [https://www.microsoft.com/en-us/research/event/tracworkshop/ Trustworthy and Robust AI workshop] ||
-June 2020  | I will be spending this summer at Google Brain, working with [https://www.alexdamour.com/ Alex D'Amour] ||
-June 2020 | Our [https://arxiv.org/abs/1910.04817 paper] on causal bound estimation has been accepted at ICML 2020
+July, 2020  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 causal bounds] at ICML ||
 ~~~

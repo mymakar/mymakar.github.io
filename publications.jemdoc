@@ -4,6 +4,14 @@
 A full list of my publications can be found [https://scholar.google.com/citations?user=bmlgkM4AAAAJ&hl=en here] \n
 \* denotes joint first authorship
 
+- Causally-motivated shortcut removal using auxiliary labels \n
+*M. Makar*, B. Packer, D. Moldovan, D. Blalock, Y. Halpern, A. D'Amour \n
+*AISTATS*, 2022  \[[https://arxiv.org/abs/2105.06422 paper]\]
+
+- Exploiting structured data for learning contagious diseases under incomplete testing \n
+*M. Makar*, L. West, D. Hooper, E. Horvitz, E. Shenoy, J. Guttag \n
+*ICML*, 2021, \[[https://proceedings.mlr.press/v139/makar21a.html paper]\]
+
 - Estimation of Bounds on Potential Outcomes for Decision Making \n
 *M. Makar*, F. Johansson, J. Guttag, D. Sontag \n
 *ICML*, 2020 \[[https://arxiv.org/abs/1910.04817 paper]\]
