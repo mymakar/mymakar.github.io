@@ -4,17 +4,21 @@
 ~~~
 {}{img_left}{img/pictwitter.png}{alt text}{200}{200}
 Presidential postdoctoral fellow/Assistant professor in CSE, University of Michigan \n
-Consulting researcher at Microsoft Research \n
 E-mail: mmakar \[at\] umich \[dot\] edu \n
 Twitter: [https://twitter.com/maggiemakar @Maggiemakar] \n
-CV: As of [res_10_2020.pdf October 2020] \n
+CV: As of [mmakar_cv_july2022.pdf July 2022] \n
 [https://scholar.google.com/citations?user=bmlgkM4AAAAJ&hl=en Google scholar profile] \n
 ~~~
 
 == About me
 I study machine learning, causal inference, and the intersection between the two. My work focuses on building data-efficient causal inference methods in resource-constrained settings, and building robust predictive ML models using ideas from causality. Prior to UM, I completed my PhD in CSAIl, MIT and my bachelors degree in math and economics at Umass Amherst.
 
+== Joining the lab
+If you reach out to me about research opportunities, please include the string "[Interested-student]" in the title of your email. 
+
+
 == Mentorship
+- Pengrun Huang
 - Jiayun Zheng
 - Meghana Kameneni
 - Agni Kumar \[[http://dspace.mit.edu/handle/1721.1/127420 thesis]\]
@@ -44,10 +48,10 @@ Full list of publications [publications.html here]
 
 ~~~
 {}{table}{news_table}
+June, 2022 | Our papers on efficient RL, fairness and causality and causally motivated invariance have been accepted at ICML workshops! || 
 Jan, 2022 | Our paper on causally motivated shortcut removal was accepted at AISTATS! ||
 Sept, 2021 | I will be starting my position as a visitng researcher at MSR ||
 August, 2021 | I will be starting my position as the PPFP at UM ||
 July, 2021  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 predicting infectious diseases] at ICML ||
 Sept 21, 2020  | I will be presenting recent work at Microsoft's [https://www.microsoft.com/en-us/research/event/ai-breakthroughs-2020/ AI breakthroughs] today ||
-July, 2020  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 causal bounds] at ICML ||
 ~~~
