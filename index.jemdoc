@@ -6,16 +6,12 @@
 Presidential postdoctoral fellow/Assistant professor in CSE, University of Michigan \n
 E-mail: mmakar \[at\] umich \[dot\] edu \n
 Twitter: [https://twitter.com/maggiemakar @Maggiemakar] \n
-CV: As of [mmakar_cv_july2022.pdf July 2022] \n
-[https://scholar.google.com/citations?user=bmlgkM4AAAAJ&hl=en Google scholar profile] \n
+CV: As of [mmakar_cv_set2022.pdf Sept 2022] \n
+[https://scholar.google.com/citations?hl=en&user=bmlgkM4AAAAJ&view_op=list_works&sortby=pubdate Google scholar profile] \n
 ~~~
 
 == About me
 I study machine learning, causal inference, and the intersection between the two. My work focuses on building data-efficient causal inference methods in resource-constrained settings, and building robust predictive ML models using ideas from causality. Prior to UM, I completed my PhD in CSAIl, MIT and my bachelors degree in math and economics at Umass Amherst.
-
-== Joining the lab
-If you reach out to me about research opportunities, please include the string "[Interested-student]" in the title of your email. 
-
 
 == Mentorship
 - Pengrun Huang
@@ -27,6 +23,10 @@ If you reach out to me about research opportunities, please include the string "
 
 == Selected Publications
 Full list of publications [publications.html here]
+
+- Causally motivated multi-shortcut identification and removal \n
+J. Zheng, *M. Makar* \n 
+*NeurIPS*, 2022 \[[https://openreview.net/pdf?id=gPlGk3p1j_M workshop version], full paper forthcoming\]
 
 - Causally-motivated shortcut removal using auxiliary labels \n
 *M. Makar*, B. Packer, D. Moldovan, D. Blalock, Y. Halpern, A. D'Amour \n
@@ -40,18 +40,15 @@ Full list of publications [publications.html here]
 *M. Makar*, F. Johansson, J. Guttag, D. Sontag \n
 *ICML*, 2020 \[[https://arxiv.org/abs/1910.04817 paper]\]
 
-- A Distillation Approach to Data Efficient Individual Treatment Effect Estimation \n
-*M. Makar*, A. Swaminathan, E. Kiciman \n
-*AAAI*, 2019 \[[https://ojs.aaai.org//index.php/AAAI/article/view/4375 paper]\]
 
 == Recent News
 
 ~~~
 {}{table}{news_table}
+Sept, 2022 | Our work on multi-shortcut removal, efficient offline RL, and concept credible learning got accpted to NeurIPS ||
 June, 2022 | Our papers on efficient RL, fairness and causality and causally motivated invariance have been accepted at ICML workshops! || 
 Jan, 2022 | Our paper on causally motivated shortcut removal was accepted at AISTATS! ||
 Sept, 2021 | I will be starting my position as a visitng researcher at MSR ||
 August, 2021 | I will be starting my position as the PPFP at UM ||
 July, 2021  | I will be presenting our work on [https://arxiv.org/abs/1910.04817 predicting infectious diseases] at ICML ||
-Sept 21, 2020  | I will be presenting recent work at Microsoft's [https://www.microsoft.com/en-us/research/event/ai-breakthroughs-2020/ AI breakthroughs] today ||
 ~~~

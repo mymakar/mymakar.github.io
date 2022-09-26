@@ -1,8 +1,24 @@
 # jemdoc: menu{MENU}{index.html}
 == Publications
 
-A full list of my publications can be found [https://scholar.google.com/citations?user=bmlgkM4AAAAJ&hl=en here] \n
+A full list of my publications can be found [https://scholar.google.com/citations?hl=en&user=bmlgkM4AAAAJ&view_op=list_works&sortby=pubdate here] \n
 \* denotes joint first authorship
+
+- Fairness and robustness in anti-causal prediction settings \n 
+*M. Makar* and A. D'Amour \n
+\[[https://arxiv.org/abs/2209.09423 Arxiv]\]  
+
+- Causally motivated multi-shortcut identification and removal \n
+J. Zheng, *M. Makar* \n 
+*NeurIPS*, 2022 \[[https://openreview.net/pdf?id=gPlGk3p1j_M workshop version], full paper forthcoming\]
+
+- Leveraging Factored Action Spaces for Efficient Offline Reinforcement Learning in Healthcare \n 
+S. Tang, *M. Makar*, M. Sjoding, F. Doshi-Velez, J. Wiens \n 
+*NeurIPS*, 2022 \[paper forthcoming\]
+
+- Learning Concept Credible Models for Mitigating Shortcuts \n
+J. Wang, S. Jabbour, *M. Makar*, M. Sjoding, J. Wiens \n
+*NeurIPS*, 2022 \[paper forthcoming\]
 
 - Causally-motivated shortcut removal using auxiliary labels \n
 *M. Makar*, B. Packer, D. Moldovan, D. Blalock, Y. Halpern, A. D'Amour \n
