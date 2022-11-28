@@ -18,3 +18,22 @@
 #news_table tr:nth-child(even) {background: #CCC}
 #news_table tr:nth-child(odd) {background: #FFF}
 
+
+#student_table {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+
+#student_table td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: left;
+    border: 0px solid #ddd;
+}
+
+#student_table td:first-child	{
+	width: 1px;
+	white-space: nowrap;
+}
+

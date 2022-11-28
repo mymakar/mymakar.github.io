@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU}{index.html}, addcss{table.css}
+== Student collaborators 
+
+== Current students
+~~~
+{}{table}{student_table}
+Ron Nafshi (PhD Candidate, 2022-Present) | |
+~~~
+
+
+== Previous students
+*Undergrad/Masters students*\n
+~~~
+{}{table}{student_table}
+Pengrun Huang| [https://openreview.net/forum?id=Zb6ID5LhdSy NeurIPS 2022 workshop paper] | ||
+Jiayun Zhang| [https://openreview.net/forum?id=-ZQOx6yaVa- NeurIPS 2022 paper] | || 
+Emily Mu | [http://dspace.mit.edu/handle/1721.1/123046 Thesis], [https://academic.oup.com/ofid/article/6/Supplement_2/S824/5606058 OFID abstract] | PhD student, MIT ||
+Agni Kumar | [http://dspace.mit.edu/handle/1721.1/127420 Thesis] | Research scientist at Apple || 
+Advaith Anand | [http://dspace.mit.edu/handle/1721.1/122999 Thesis] | Software Engineer, Palantir 
+~~~
