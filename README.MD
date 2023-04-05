@@ -13,6 +13,8 @@ Note: jemdoc.py was modified to add description metatag
 
 OR Just add this the tag in the hidden_file.txt
 
+
+
 ## Adding a new page to the left hand side menu
 - Add the page to the `MENU` doc
 - run ` jemdoc  -o page.html page.jemdoc ` for every page and then run ` jemdoc index.jemdoc` \n 
