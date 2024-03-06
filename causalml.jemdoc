@@ -1,13 +1,5 @@
 # jemdoc: menu{MENU}{causalml.html}
-== EECS 598 - 009 Causality and machine learning 
+== CSE 598 - 006 Causality and machine learning 
 
-This is a temporary website to serve the material for the class until internet issues are resolved. Once resolved, all the material will be hosted only on canvas. 
-
-=== Lecture notes
-- [lecture1_notes.pdf Lecture 1] 
-
-=== HW 
-- [hw0.zip HW 0] 
-
-=== Class info
-- [causalml_syllabus.pdf Syllabus] 
+=== Class information
+- [causalMLposter.pdf Course flyer] 
