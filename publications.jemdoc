@@ -4,91 +4,116 @@
 A full list of my publications can be found [https://scholar.google.com/citations?hl=en&user=bmlgkM4AAAAJ&view_op=list_works&sortby=pubdate here] \n
 \* denotes joint first authorship
 
+- Hypothesis Testing the Circuit Hypothesis in LLMs \n 
+C Shi, N Beltran-Velez, A Nazaret, C Zheng, A Garriga-Alonso, A Jesson, *M Makar*, D Blei \n 
+*NeurIPS* 2024 \[[https://openreview.net/pdf?id=ibSNv9cldu workshop version], full paper forthcoming\]
+
+- Who’s Gaming the System? A Causally-Motivated Approach for Detecting Strategic Adaptation \n
+T Chang, L Warrenburg, S Park, R Parikh, *M Makar*, J Wiens \n
+*Neurips* 2024 [paper forthcoming]
+
+- Learning to Rank for Optimal Treatment Allocation Under Resource Constraints \n
+F Kamran, *M Makar*, J Wiens \n 
+*AIStats* 2024 \[[https://proceedings.mlr.press/v238/kamran24a/kamran24a.pdf paper]\]
+
+
+- Offline policy evaluation and optimization under confounding \n
+C Kausik, Y Lu, K Tan, *M Makar*, Y Wang, A Tewari \n
+*AIStats* 2024 \[[https://proceedings.mlr.press/v238/kausik24a/kausik24a.pdf paper]\]
+
+- Partial identification of the maximum mean discrepancy with mismeasured data \n
+R. Nafshi, *M. Makar* \n
+*UAI*, 2024 \[[https://openreview.net/pdf?id=2vWb5l3xXy paper]\]
+
+- Uncovering the Varied Impact of Behavioral Change Messages on Population Groups \n
+J. Xu, R. Mihalcea, E. Frank, S. Sen, *M. Makar* \n
+*MLHC* 2023 \[[https://proceedings.mlr.press/v219/xu23a/xu23a.pdf paper]\]
+
 - Fairness and robustness in anti-causal prediction settings \n 
 *M. Makar* and A. D'Amour \n
-\[[https://arxiv.org/abs/2209.09423 Arxiv]\]  
+*TMLR* 2023  \[[https://arxiv.org/abs/2209.09423 paper]\]
 
 - Conditional differential measurement error: partial identifiability and estimation \n 
 P. Huang and *M. Makar* \n 
-\[[https://openreview.net/pdf?id=Zb6ID5LhdSy NeurIPS 2022 workshop on causal ML for real world impact]\]
+NeurIPS 2022 workshop on causal ML for real world impact \[[https://openreview.net/pdf?id=Zb6ID5LhdSy paper]\]
 
 - Causally motivated multi-shortcut identification and removal \n
 J. Zheng, *M. Makar* \n 
-*NeurIPS*, 2022 \[[https://openreview.net/pdf?id=gPlGk3p1j_M workshop version], full paper forthcoming\]
+*NeurIPS* 2022 \[[https://proceedings.neurips.cc/paper_files/paper/2022/file/536d643875321d6c3282ee8c7ea5eb6a-Paper-Conference.pdf paper]\]
 
 - Leveraging Factored Action Spaces for Efficient Offline Reinforcement Learning in Healthcare \n 
 S. Tang, *M. Makar*, M. Sjoding, F. Doshi-Velez, J. Wiens \n 
-*NeurIPS*, 2022 \[paper forthcoming\]
+*NeurIPS* 2022 \[[https://proceedings.neurips.cc/paper_files/paper/2022/file/dda7f9378a210c25e470e19304cce85d-Paper-Conference.pdf paper]\]
 
 - Learning Concept Credible Models for Mitigating Shortcuts \n
 J. Wang, S. Jabbour, *M. Makar*, M. Sjoding, J. Wiens \n
-*NeurIPS*, 2022 \[paper forthcoming\]
+*NeurIPS* 2022 \[[https://proceedings.neurips.cc/paper_files/paper/2022/file/d791394d32c428aecc7a5b101fb47799-Paper-Conference.pdf paper]\]
 
 - Causally-motivated shortcut removal using auxiliary labels \n
 *M. Makar*, B. Packer, D. Moldovan, D. Blalock, Y. Halpern, A. D'Amour \n
-*AISTATS*, 2022  \[[https://arxiv.org/abs/2105.06422 paper]\]
+*AIStats* 2022  \[[https://arxiv.org/abs/2105.06422 paper]\]
 
 - Exploiting structured data for learning contagious diseases under incomplete testing \n
 *M. Makar*, L. West, D. Hooper, E. Horvitz, E. Shenoy, J. Guttag \n
-*ICML*, 2021, \[[https://proceedings.mlr.press/v139/makar21a.html paper]\]
+*ICML* 2021, \[[https://proceedings.mlr.press/v139/makar21a.html paper]\]
 
 - Estimation of Bounds on Potential Outcomes for Decision Making \n
 *M. Makar*, F. Johansson, J. Guttag, D. Sontag \n
-*ICML*, 2020 \[[https://arxiv.org/abs/1910.04817 paper]\]
+*ICML* 2020 \[[https://arxiv.org/abs/1910.04817 paper]\]
 
 - A Distillation Approach to Data Efficient Individual Treatment Effect Estimation \n
 *M. Makar*, A. Swaminathan, E. Kiciman \n
-*AAAI*, 2019 \[[https://ojs.aaai.org//index.php/AAAI/article/view/4375 paper]\]
+*AAAI* 2019 \[[https://ojs.aaai.org//index.php/AAAI/article/view/4375 paper]\]
 
 - Learning the Influence of Individual Clostridioides difficile Infections \n
 E. Mu, *M. Makar*, L. West, J. Guttag, D. Rosenberg, E. Shenoy \n
-*Open Forum Infectious Diseases*, 2019
+*Open Forum Infectious Diseases* 2019
 
 - Learning the Probability of Activation in the Presence of Latent spreaders \n
 *M. Makar*, J. Guttag, J. Wiens \n
-*AAAI*, 2018  \[[https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16980 paper]\]
+*AAAI* 2018  \[[https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16980 paper]\]
 
 -  A generalizable, data-driven approach to predict daily risk of Clostridium difficile infection at two large academic health centers \n
 J. Oh\*, *M. Makar*\*, /et al/. \n
-*Infection Control and Hospital Epidemiology*, 2018  \[[https://pubmed.ncbi.nlm.nih.gov/29576042/ paper]\]
+*Infection Control and Hospital Epidemiology* 2018  \[[https://pubmed.ncbi.nlm.nih.gov/29576042/ paper]\]
 
 - The Most Expensive Patients in the Hospital \n
 K. Joynt, *M. Makar*, A. Gawande, D. Cutler, Z. Obermeyer \n
-*Circulation*, 2018 \[[https://www.ahajournals.org/doi/10.1161/circ.130.suppl_2.17306 paper]\]
+*Circulation* 2018 \[[https://www.ahajournals.org/doi/10.1161/circ.130.suppl_2.17306 paper]\]
 
 - Estimating the Causal Effectof Fine Particulate Matter Levels on Death and Hospitalization: Are Levels Below the Safety Standards Harmful? \n
 *M. Makar* \*, J. Antonelli\*, Q. Di, J. Schwartz, D. Cutler, F. Dominici \n
-*Epidemiology*, 2017 \[[https://pubmed.ncbi.nlm.nih.gov/28768298/ paper]\]
+*Epidemiology* 2017 \[[https://pubmed.ncbi.nlm.nih.gov/28768298/ paper]\]
 
 - A data-driven approach to predict daily risk of Clostridium difficile infection at two large academic health centers \n
 J. Oh\*, *M. Makar*\*, /et al/. \n
-*Open Forum Infectious Diseases*, 2017 \[[https://pubmed.ncbi.nlm.nih.gov/29576042/ paper]\]
+*Open Forum Infectious Diseases* 2017 \[[https://pubmed.ncbi.nlm.nih.gov/29576042/ paper]\]
 
 - Association between the Medicare hospice benefit and health care utilization and costs for patients with poor-prognosis cancer \n
 Z. Obermeyer, *M. Makar*, S. Abujaber, F. Dominici, S. Block, D. Cutler \n
-*Journal ofthe American Medical Association*, 2014 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4274169/ paper]\]
+*Journal ofthe American Medical Association* 2014 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4274169/ paper]\]
 
 - Short-term mortality prediction for elderly patients using Medicare claims data \n
 *M. Makar*, M. Ghassemi, D. Cutler, Z. Obermeyer \n
-*International Journal of Machine Learning and Computing* ,2015 \[[https://pubmed.ncbi.nlm.nih.gov/28018571/ paper]\]
+*International Journal of Machine Learning and Computing* 2015 \[[https://pubmed.ncbi.nlm.nih.gov/28018571/ paper]\]
 
 - Cost Savings Associated with Expanded Hospice Use Among Medicare Beneficiaries with Poor Prognosis Cancer \n
 B. Powers, M. Makar, D. Cutler, Z. Obermeyer \n
-*Journal of Palliative Medicine*, 2015 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4425221/ paper]\]
+*Journal of Palliative Medicine* 2015 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4425221/ paper]\]
 
 - Emergency care delivery in 59 low- and middle-income countries: Systematic review \n
 Z. Obermeyer, S. Abujaber, *M. Makar*, S. Stoll, S. Kayden, L. Wallis, T. Reynolds \n
-*WHO Bulletin*, 2015 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4581659/ paper]\]
+*WHO Bulletin* 2015 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4581659/ paper]\]
 
 - Physician revealed preferences for hospice are strongly related to their patients' enrollment in hospice \n
 Z. Obermeyer, B. Powers, *M. Makar*, N. Keating, D. Cutler \n
-*Health Affairs*, 2015 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852702/ paper]\]
+*Health Affairs* 2015 \[[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4852702/ paper]\]
 
 - Emergency Care Use and the Medicare Hospice Benefit for Individuals with Cancer with a Poor Prognosis \n
  Z. Obermeyer, A. Clarke, *M. Makar*, J. Schuur, D. Cutler\n
- *Journal of the American Geriatrics Society*, 2016 \[[https://pubmed.ncbi.nlm.nih.gov/26805592/ paper]\]
+ *Journal of the American Geriatrics Society* 2016 \[[https://pubmed.ncbi.nlm.nih.gov/26805592/ paper]\]
 
 - Impact of a dedicated palliative radiation oncology service onthe use of single fraction and hypofractionated radiation therapy among patients with bone metasteses \n
 S. Skamene, I. Agarwal, *M. Makar*, /et al./ \n
-*Annals of Palliative Medicine*, 2017 \[[https://pubmed.ncbi.nlm.nih.gov/29307209/ paper]\]
+*Annals of Palliative Medicine* 2017 \[[https://pubmed.ncbi.nlm.nih.gov/29307209/ paper]\]
 

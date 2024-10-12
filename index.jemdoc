@@ -23,19 +23,19 @@ Please read [joining.html how to join] before emailing me.
 == Selected Publications
 Full list of publications [publications.html here]
 
+- Hypothesis Testing the Circuit Hypothesis in LLMs \n 
+C Shi, N Beltran-Velez, A Nazaret, C Zheng, A Garriga-Alonso, A Jesson, *M Makar*, D Blei \n 
+*NeurIPS* 2024 \[[https://openreview.net/pdf?id=ibSNv9cldu workshop version], full paper forthcoming\]
+
+- Offline policy evaluation and optimization under confounding \n
+C Kausik, Y Lu, K Tan, *M Makar*, Y Wang, A Tewari \n
+*AIStats* 2024 \[[https://proceedings.mlr.press/v238/kausik24a/kausik24a.pdf paper]\]
+
+- Partial identification of the maximum mean discrepancy with mismeasured data \n
+R. Nafshi, *M. Makar* \n
+*UAI*, 2024 \[[https://openreview.net/pdf?id=2vWb5l3xXy paper]\]
+
 - Causally motivated multi-shortcut identification and removal \n
 J. Zheng, *M. Makar* \n 
-*NeurIPS*, 2022 \[[https://openreview.net/pdf?id=gPlGk3p1j_M workshop version], full paper forthcoming\]
-
-- Causally-motivated shortcut removal using auxiliary labels \n
-*M. Makar*, B. Packer, D. Moldovan, D. Blalock, Y. Halpern, A. D'Amour \n
-*AISTATS*, 2022  \[[https://arxiv.org/abs/2105.06422 paper]\]
-
-- Exploiting structured data for learning contagious diseases under incomplete testing \n
-*M. Makar*, L. West, D. Hooper, E. Horvitz, E. Shenoy, J. Guttag \n
-*ICML*, 2021, \[[https://proceedings.mlr.press/v139/makar21a.html paper]\]
-
-- Estimation of Bounds on Potential Outcomes for Decision Making \n
-*M. Makar*, F. Johansson, J. Guttag, D. Sontag \n
-*ICML*, 2020 \[[https://arxiv.org/abs/1910.04817 paper]\]
+*NeurIPS* 2022 \[[https://proceedings.neurips.cc/paper_files/paper/2022/file/536d643875321d6c3282ee8c7ea5eb6a-Paper-Conference.pdf paper]\]
 
