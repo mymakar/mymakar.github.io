@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loza's ML Summer Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal-50: #E1F5EE;
+    --teal-100: #9FE1CB;
+    --teal-400: #1D9E75;
+    --teal-600: #0F6E56;
+    --teal-800: #085041;
+    --blue-50: #E6F1FB;
+    --blue-100: #B5D4F4;
+    --blue-400: #378ADD;
+    --blue-800: #0C447C;
+    --amber-50: #FAEEDA;
+    --amber-100: #FAC775;
+    --amber-400: #BA7517;
+    --amber-800: #633806;
+    --pink-50: #FBEAF0;
+    --pink-100: #F4C0D1;
+    --pink-400: #D4537E;
+    --pink-800: #72243E;
+    --gray-50: #F7F6F2;
+    --gray-100: #ECEAE3;
+    --gray-200: #D3D1C7;
+    --gray-600: #5F5E5A;
+    --gray-800: #2C2C2A;
+    --bg: #FAFAF8;
+    --surface: #FFFFFF;
+    --border: rgba(0,0,0,0.1);
+    --border-strong: rgba(0,0,0,0.18);
+    --text: #1a1a18;
+    --text-muted: #5F5E5A;
+    --text-faint: #9A9890;
+    --radius: 10px;
+    --radius-lg: 14px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Instrument Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .page-header {
+    background: var(--gray-800);
+    color: white;
+    padding: 3rem 2.5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    border: 40px solid rgba(255,255,255,0.04);
+  }
+
+  .page-header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: 30%;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 30px solid rgba(255,255,255,0.03);
+  }
+
+  .header-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal-100);
+    margin-bottom: 0.75rem;
+  }
+
+  .header-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .header-title em {
+    font-style: italic;
+    color: var(--teal-100);
+  }
+
+  .header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .meta-label {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .meta-value {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+  }
+
+  .callout {
+    background: var(--teal-50);
+    border-left: 3px solid var(--teal-400);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 0.9rem 1.2rem;
+    margin: 2rem 2.5rem;
+    font-size: 13.5px;
+    color: var(--teal-800);
+    line-height: 1.6;
+    max-width: 860px;
+  }
+
+  .callout strong { font-weight: 600; }
+
+  .main { padding: 0 2.5rem 4rem; max-width: 900px; }
+
+  .section-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .timeline { display: flex; flex-direction: column; gap: 0; margin-bottom: 2rem; }
+
+  .phase-block {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s;
+  }
+
+  .phase-block:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+
+  .phase-trigger {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .phase-trigger:hover { background: var(--gray-50); }
+
+  .phase-badge {
+    width: 42px; height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .phase-head { display: flex; flex-direction: column; gap: 2px; }
+
+  .phase-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .phase-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .phase-tags {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .chevron {
+    width: 18px; height: 18px;
+    color: var(--text-faint);
+    flex-shrink: 0;
+    transition: transform 0.25s;
+    margin-left: 4px;
+  }
+
+  .phase-block.open .chevron { transform: rotate(180deg); }
+
+  .phase-body {
+    display: none;
+    padding: 0 1.25rem 1.25rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .phase-block.open .phase-body { display: block; }
+
+  .body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .body-grid { grid-template-columns: 1fr; }
+    .main { padding: 0 1.25rem 3rem; }
+    .callout { margin: 1.5rem 1.25rem; }
+    .page-header { padding: 2rem 1.25rem 2rem; }
+    .phase-tags { display: none; }
+  }
+
+  .body-section { display: flex; flex-direction: column; gap: 8px; }
+
+  .body-label {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 2px;
+  }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+
+  .chip {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: var(--gray-50);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  .chip-loza {
+    background: var(--teal-50);
+    border-color: var(--teal-100);
+    color: var(--teal-800);
+  }
+
+  .info-item {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    padding: 0.6rem 0.8rem;
+    background: var(--gray-50);
+    border-radius: var(--radius);
+  }
+
+  .info-item strong { color: var(--text); font-weight: 600; }
+
+  .milestone-flag {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+
+  .flag-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+  .week-bar-container {
+    margin: 0.75rem 0 0;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .week-bar-label {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    color: var(--text-faint);
+    width: 60px;
+    flex-shrink: 0;
+  }
+
+  .week-bars { display: flex; gap: 3px; flex: 1; }
+
+  .wbar {
+    height: 6px;
+    border-radius: 3px;
+    flex: 1;
+    background: var(--gray-100);
+  }
+
+  /* Final project spotlight */
+  .project-spotlight {
+    background: var(--gray-800);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .spotlight-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal-100);
+    margin-bottom: 0.5rem;
+  }
+
+  .spotlight-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  .spotlight-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .spotlight-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius);
+    padding: 0.75rem;
+  }
+
+  .sc-label {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 4px;
+  }
+
+  .sc-value {
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+  }
+
+  .dataset-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--teal-100);
+    text-decoration: none;
+    border: 1px solid rgba(159,225,203,0.3);
+    padding: 5px 12px;
+    border-radius: 20px;
+    transition: background 0.15s;
+    margin-top: 0.5rem;
+  }
+
+  .dataset-link:hover { background: rgba(159,225,203,0.1); }
+
+  /* Milestones */
+  .milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
+
+  .mcard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+  }
+
+  .mcard-week {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .mcard-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 12px;
+    color: var(--text-faint);
+    font-family: 'DM Mono', monospace;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="header-label">ML Summer Internship Plan</div>
+  <h1 class="header-title"><em>Loza's</em> Machine Learning Summer</h1>
+  <div class="header-meta">
+    <div class="meta-item">
+      <span class="meta-label">Duration</span>
+      <span class="meta-value">8 weeks</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Level</span>
+      <span class="meta-value">No prior ML experience</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Math assumed</span>
+      <span class="meta-value">Pre-calculus (no derivatives)</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Interests</span>
+      <span class="meta-value">Robotics</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Final goal</span>
+      <span class="meta-value">Wall-Following Robot Task</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="main">
+
+  <div class="section-title">The five phases — click to expand</div>
+  <div class="timeline" id="timeline"></div>
+
+  <div class="section-title">Final project — Wall-Following Robot Dataset</div>
+  <div class="project-spotlight">
+    <div class="spotlight-label">Weeks 6–8 · Kaggle Dataset · scikit-learn</div>
+    <div class="spotlight-title">🤖 Wall-Following Robot Navigation</div>
+    <div class="spotlight-desc">
+      A real robot equipped with 24 ultrasonic sensors navigates around a room. The task: classify each moment into one of 4 movement commands — move forward, turn left, turn right, or slight right. Loza will clean the data, visualize the sensor readings, train multiple classifiers, and compare their accuracy. Robots, sensors, and decision-making — directly relevant to her interests in robotics and aeronautical engineering.
+    </div>
+    <a class="dataset-link" href="https://www.kaggle.com/datasets/uciml/wall-following-robot" target="_blank">
+      📦 Kaggle: Wall-Following Robot Dataset
+    </a>
+    <div class="spotlight-grid">
+      <div class="spotlight-card">
+        <div class="sc-label">Dataset size</div>
+        <div class="sc-value">5,456 sensor readings, 24 features each</div>
+      </div>
+      <div class="spotlight-card">
+        <div class="sc-label">Task type</div>
+        <div class="sc-value">Multi-class classification (4 directions)</div>
+      </div>
+      <div class="spotlight-card">
+        <div class="sc-label">Models to try</div>
+        <div class="sc-value">Decision Tree, KNN, Random Forest</div>
+      </div>
+      <div class="spotlight-card">
+        <div class="sc-label">Deliverable</div>
+        <div class="sc-value">10-min lab presentation + confusion matrix analysis</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">Key milestones</div>
+  <div class="milestones-grid" id="milestones"></div>
+
+
+</div>
+
+<footer>Loza's ML Summer Plan &nbsp;·&nbsp; 8 weeks &nbsp;·&nbsp; Wall-Following Robot Dataset &nbsp;·&nbsp; Generated for lab mentorship</footer>
+
+<script>
+const TOTAL_WEEKS = 8;
+// wStart values: week1=0, week2=1, data=2, ml=4, project=6
+
+const phases = [
+  {
+    name: 'Week 1 — What is a program?',
+    weeks: 'Week 1',
+    wStart: 0, wDur: 1,
+    color: { badge: '#E1F5EE', badgeText: '#085041', bar: '#1D9E75', tag: '#E1F5EE', tagText: '#085041', tagBorder: '#9FE1CB', milestone: '#E1F5EE', milestoneText: '#085041' },
+    emoji: '🟢',
+    tags: ['Google Colab', 'Concept-first'],
+    milestone: 'Open Google Colab, write cells from scratch, run them, and explain what a variable is and why programs need to run in order.',
+    resources: 'Google Colab · <a href="https://drive.google.com/file/d/1pNYACRyv3aW8grSYj5EVULXiKqrRWH8Q/view?usp=sharing" target="_blank" style="color:var(--teal-600);font-weight:600;">Week 1 Colab notebook →</a><br><span style="color:var(--text-faint);font-size:12px;">Optional deeper dive: "Automate the Boring Stuff with Python" ch 1</span>',
+    expanded: true,
+    concepts: [
+      {title: 'What even is a program?', desc: 'Analogy: a recipe is a program for a cook. Walk through the robot Colab notebook together. Run the first cell. See "Hello, Robot!" appear. Talk about what just happened.' },
+      {title: 'Variables & the robot status board', desc: 'Introduce variables as labeled boxes. Loza stores robot_name, battery_level, and current_speed. Prints a formatted status report. Discuss: what happens if you use a variable before defining it?' },
+      { title: 'Data types — numbers vs words vs yes/no', desc: 'int, float, str, bool. Robot examples: sensor distance (float), direction (str), is_charging (bool). Try adding a number to a string — read the TypeError together.' },
+      { title: 'Order matters — be the robot', desc: 'Scramble a set of cells and ask Loza to predict what breaks. Re-order them. Introduce comments as "notes to future you." Loza writes her own commented version of the status notebook.' },
+      { title: 'Mini challenge: Robot identity card', desc: 'Loza writes a Colab notebook from scratch (no template) that prints a complete robot identity card: name, model, sensor count, battery, and a fun fact. First fully independent creation.' },
+    ]
+  },
+  {
+    name: 'Week 2 — Python building blocks',
+    weeks: 'Week 2',
+    wStart: 1, wDur: 1,
+    color: { badge: '#D1F0E6', badgeText: '#085041', bar: '#25B384', tag: '#D1F0E6', tagText: '#085041', tagBorder: '#7ED8B5', milestone: '#D1F0E6', milestoneText: '#085041' },
+    emoji: '🐍',
+    tags: ['Loops & logic', 'Google Colab'],
+    topics: ['If / elif / else — making decisions', 'for loops — doing things repeatedly', 'while loops — doing things until a condition changes', 'Lists — storing many values at once', 'Indexing and slicing lists', 'Functions — reusable blocks of instructions', 'Basic debugging strategies'],
+    loza: [
+      'If battery < 20%: print "Charging needed" — robot decision logic',
+      'Loop through 24 sensor readings and print each one',
+      'Function: check_sensor(value) → returns "clear" or "obstacle"',
+      'List of robot movement commands — loop and print each',
+      'Debug a broken robot program (intentionally buggy starter file)',
+    ],
+    milestone: 'Can write loops, conditionals, and functions in Colab without looking anything up — and can load a list of numbers and process each item.',
+    resources: 'TBA',
+    expanded: false,
+  },
+  {
+    name: 'Data exploration & visualization',
+    weeks: 'Weeks 3–4',
+    wStart: 2, wDur: 2,
+    color: { badge: '#E6F1FB', badgeText: '#0C447C', bar: '#378ADD', tag: '#E6F1FB', tagText: '#0C447C', tagBorder: '#B5D4F4', milestone: '#E6F1FB', milestoneText: '#0C447C' },
+    emoji: '📊',
+    tags: ['Visual statistics', 'Robot dataset intro'],
+    topics: ['Pandas DataFrames', 'Matplotlib & Seaborn charts', 'Mean, median, standard deviation', 'Distributions & histograms', 'Correlation — visual, not formula', 'Groupby & value counts', 'Understanding class balance'],
+    loza: ['Load the Wall-Following Robot CSV and inspect it', 'Plot the 24 ultrasonic sensor readings as a heatmap', 'Count how often each movement direction appears', 'Visualize sensor patterns per movement class'],
+    milestone: 'Loads the robot dataset, produces 4+ meaningful visualizations, and writes a short paragraph explaining what patterns she notices in the sensor readings.',
+    resources: 'TBA'
+  },
+  {
+    name: 'Core ML concepts & first models',
+    weeks: 'Weeks 5–6',
+    wStart: 4, wDur: 2,
+    color: { badge: '#FAEEDA', badgeText: '#633806', bar: '#BA7517', tag: '#FAEEDA', tagText: '#633806', tagBorder: '#FAC775', milestone: '#FAEEDA', milestoneText: '#633806' },
+    emoji: '🤖',
+    tags: ['scikit-learn', 'No gradient descent'],
+    topics: ['What ML actually is (pattern-finding from data)', 'Training vs test split — why it matters', 'Classification: what the model is deciding', 'Decision Tree classifier — intuition & code', 'K-Nearest Neighbors (KNN)', 'scikit-learn pipeline: fit → predict → evaluate', 'Accuracy score & confusion matrix'],
+    loza: ['Train a Decision Tree on robot sensor data', 'Train KNN and compare accuracy to Decision Tree', 'Build a confusion matrix: which directions get confused?', 'Ask: why would the robot confuse "left" vs "slight right"?'],
+    milestone: 'Has trained at least two classifiers on the robot dataset using scikit-learn, can read a confusion matrix, and can explain in plain words why one model does better than another.',
+    resources: 'TBA'
+  },
+  {
+    name: 'Final project & presentation',
+    weeks: 'Weeks 7–8',
+    wStart: 6, wDur: 2,
+    color: { badge: '#FBEAF0', badgeText: '#72243E', bar: '#D4537E', tag: '#FBEAF0', tagText: '#72243E', tagBorder: '#F4C0D1', milestone: '#FBEAF0', milestoneText: '#72243E' },
+    emoji: '🚀',
+    tags: ['Wall-Following Robot Dataset', 'Lab presentation'],
+    topics: ['Try a third model: Random Forest', 'Tune max_depth or n_neighbors — what changes?', 'Feature importance: which sensors matter most?', 'Error analysis: where does the model fail and why?', 'Written 1-page summary of findings', '10-min slide presentation to the lab'],
+    loza: ['Compare Decision Tree vs KNN vs Random Forest side by side', 'Identify the top 5 most important sensor features', 'Visualize where the robot\'s model would go wrong in a real hallway', 'Present: "If this model ran on a real robot, what would happen?"'],
+    milestone: 'Presents a 10-minute slide deck to the lab — dataset overview, models tried, accuracy comparison, confusion matrix walkthrough, and what she\'d improve with more time.',
+    resources: 'TBA'
+  }
+];
+
+const milestones = [
+  { week: 'End of week 1', text: 'Opens Colab, runs cells, explains what a variable is and why order matters' },
+  { week: 'End of week 2', text: 'Writes loops, conditionals, and functions in Colab without looking anything up' },
+  { week: 'End of week 4', text: 'Explores the robot dataset and produces 4+ visualizations' },
+  { week: 'End of week 6', text: 'Trains two sklearn classifiers and reads a confusion matrix' },
+  { week: 'End of week 8', text: 'Presents full robot project to the lab — 10 min, slides, results' }
+];
+
+// Build timeline
+const timeline = document.getElementById('timeline');
+phases.forEach((ph, idx) => {
+  const block = document.createElement('div');
+  block.className = 'phase-block' + (ph.expanded ? ' open' : '');
+
+  const bars = Array.from({length: TOTAL_WEEKS}, (_, j) => {
+    const active = j >= ph.wStart && j < ph.wStart + ph.wDur;
+    return `<div class="wbar" style="background:${active ? ph.color.bar : 'var(--gray-100)'};"></div>`;
+  }).join('');
+
+  const tagsHtml = ph.tags.map(t =>
+    `<span class="tag" style="background:${ph.color.tag};color:${ph.color.tagText};border:1px solid ${ph.color.tagBorder};">${t}</span>`
+  ).join('');
+
+  const conceptsHtml = ph.concepts ? `
+    <div style="margin-top:1rem;">
+      <div class="body-label" style="margin-bottom:8px;">Core concepts</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        ${ph.concepts.map((c, i) => `
+          <div style="display:grid;grid-template-columns:80px 1fr;gap:10px;align-items:start;padding:0.65rem 0.85rem;background:var(--gray-50);border-radius:var(--radius);border:1px solid var(--border);">
+            <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--text-faint);padding-top:2px;letter-spacing:0.04em;">Concept ${i+1}</span>
+            <div>
+              <div style="font-size:12px;font-weight:600;color:var(--text);margin-bottom:2px;">${c.title}</div>
+              <div style="font-size:12px;color:var(--text-muted);line-height:1.5;">${c.desc}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
+
+  block.innerHTML = `
+    <button class="phase-trigger" aria-expanded="${ph.expanded ? 'true' : 'false'}" onclick="togglePhase(this)">
+      <div class="phase-badge" style="background:${ph.color.badge};color:${ph.color.badgeText};">${ph.emoji}</div>
+      <div class="phase-head">
+        <span class="phase-name">${ph.name}</span>
+        <span class="phase-sub">${ph.weeks}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div class="phase-tags">${tagsHtml}</div>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </button>
+    <div class="phase-body">
+      <div class="week-bar-container">
+        <span class="week-bar-label">Timeline</span>
+        <div class="week-bars">${bars}</div>
+      </div>
+      ${conceptsHtml}
+      <div style="margin-top:1rem;display:flex;flex-direction:column;gap:8px;">
+        <div class="milestone-flag" style="background:${ph.color.milestone};color:${ph.color.milestoneText};">
+          <span class="flag-icon">🎯</span>
+          <div><strong>Milestone: </strong>${ph.milestone}</div>
+        </div>
+        <div class="info-item"><strong>Resources:</strong> ${ph.resources}</div>
+      </div>
+    </div>
+  `;
+  timeline.appendChild(block);
+});
+
+// Build milestones
+const milGrid = document.getElementById('milestones');
+milestones.forEach(m => {
+  const card = document.createElement('div');
+  card.className = 'mcard';
+  card.innerHTML = `<div class="mcard-week">${m.week}</div><div class="mcard-text">${m.text}</div>`;
+  milGrid.appendChild(card);
+});
+
+function togglePhase(btn) {
+  const block = btn.closest('.phase-block');
+  const isOpen = block.classList.contains('open');
+  block.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', !isOpen);
+}
+</script>
+
+</body>
+</html>
