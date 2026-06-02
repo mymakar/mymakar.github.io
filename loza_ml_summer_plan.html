@@ -457,7 +457,7 @@
   <div class="header-meta">
     <div class="meta-item">
       <span class="meta-label">Duration</span>
-      <span class="meta-value">8 weeks</span>
+      <span class="meta-value">7 weeks</span>
     </div>
     <div class="meta-item">
       <span class="meta-label">Level</span>
@@ -481,12 +481,12 @@
 
 <div class="main">
 
-  <div class="section-title">The five phases — click to expand</div>
+  <div class="section-title">The four phases — click to expand</div>
   <div class="timeline" id="timeline"></div>
 
   <div class="section-title">Final project — Wall-Following Robot Dataset</div>
   <div class="project-spotlight">
-    <div class="spotlight-label">Weeks 6–8 · Kaggle Dataset · scikit-learn</div>
+    <div class="spotlight-label">Weeks 3–7 · Kaggle Dataset · scikit-learn</div>
     <div class="spotlight-title">🤖 Wall-Following Robot Navigation</div>
     <div class="spotlight-desc">
       A real robot equipped with 24 ultrasonic sensors navigates around a room. The task: classify each moment into one of 4 movement commands — move forward, turn left, turn right, or slight right. The task will include cleaning the data, visualizing the sensor readings, training multiple classifiers, and comparing their accuracy. Robots, sensors, and decision-making.
@@ -509,7 +509,7 @@
       </div>
       <div class="spotlight-card">
         <div class="sc-label">Deliverable</div>
-        <div class="sc-value">10-min lab presentation + confusion matrix analysis</div>
+        <div class="sc-value">Complete project notebook + written summary of findings</div>
       </div>
     </div>
   </div>
@@ -520,10 +520,10 @@
 
 </div>
 
-<footer>Loza's ML Summer Plan &nbsp;·&nbsp; 8 weeks &nbsp;·&nbsp; Wall-Following Robot Dataset &nbsp;·&nbsp; Generated for lab mentorship</footer>
+<footer>Loza's ML Summer Plan &nbsp;·&nbsp; 7 weeks &nbsp;·&nbsp; Wall-Following Robot Dataset &nbsp;·&nbsp; Generated for lab mentorship</footer>
 
 <script>
-const TOTAL_WEEKS = 8;
+const TOTAL_WEEKS = 7;
 // wStart values: week1=0, week2=1, data=2, ml=4, project=6
 
 const phases = [
@@ -561,7 +561,7 @@ const phases = [
       'Debug a broken robot program (intentionally buggy starter file)',
     ],
     milestone: 'Can write loops, conditionals, and functions in Colab without looking anything up — and can load a list of numbers and process each item.',
-    resources: 'TBA',
+    resources: 'Google Colab · <a href="https://colab.research.google.com/drive/13WC8qcqPg2NarRzlgSTuHUkQQSNOnXUF?usp=sharing" target="_blank" style="color:var(--teal-600);font-weight:600;">Week 2 Colab notebook →</a>',
     expanded: false,
   },
   {
@@ -574,31 +574,19 @@ const phases = [
     topics: ['Pandas DataFrames', 'Matplotlib & Seaborn charts', 'Mean, median, standard deviation', 'Distributions & histograms', 'Correlation — visual, not formula', 'Groupby & value counts', 'Understanding class balance'],
     loza: ['Load the Wall-Following Robot CSV and inspect it', 'Plot the 24 ultrasonic sensor readings as a heatmap', 'Count how often each movement direction appears', 'Visualize sensor patterns per movement class'],
     milestone: 'Loads the robot dataset, produces 4+ meaningful visualizations, and writes a short paragraph explaining what patterns she notices in the sensor readings.',
-    resources: 'TBA'
+    resources: 'Google Colab · <a href="https://colab.research.google.com/drive/1CqNjRkuVtbdMM3wIhnR5J6Oz_-gRrDpc?usp=sharing" target="_blank" style="color:var(--blue-800);font-weight:600;">Weeks 3–4 Colab notebook →</a>'
   },
   {
     name: 'Core ML concepts & first models',
-    weeks: 'Weeks 5–6',
-    wStart: 4, wDur: 2,
+    weeks: 'Weeks 5–7',
+    wStart: 4, wDur: 3,
     color: { badge: '#FAEEDA', badgeText: '#633806', bar: '#BA7517', tag: '#FAEEDA', tagText: '#633806', tagBorder: '#FAC775', milestone: '#FAEEDA', milestoneText: '#633806' },
     emoji: '🤖',
     tags: ['scikit-learn', 'No gradient descent'],
     topics: ['What ML actually is (pattern-finding from data)', 'Training vs test split — why it matters', 'Classification: what the model is deciding', 'Decision Tree classifier — intuition & code', 'K-Nearest Neighbors (KNN)', 'scikit-learn pipeline: fit → predict → evaluate', 'Accuracy score & confusion matrix'],
     loza: ['Train a Decision Tree on robot sensor data', 'Train KNN and compare accuracy to Decision Tree', 'Build a confusion matrix: which directions get confused?', 'Ask: why would the robot confuse "left" vs "slight right"?'],
     milestone: 'Has trained at least two classifiers on the robot dataset using scikit-learn, can read a confusion matrix, and can explain in plain words why one model does better than another.',
-    resources: 'TBA'
-  },
-  {
-    name: 'Final project & presentation',
-    weeks: 'Weeks 7–8',
-    wStart: 6, wDur: 2,
-    color: { badge: '#FBEAF0', badgeText: '#72243E', bar: '#D4537E', tag: '#FBEAF0', tagText: '#72243E', tagBorder: '#F4C0D1', milestone: '#FBEAF0', milestoneText: '#72243E' },
-    emoji: '🚀',
-    tags: ['Wall-Following Robot Dataset'],
-    topics: ['Try a third model: Random Forest', 'Tune max_depth or n_neighbors — what changes?', 'Feature importance: which sensors matter most?', 'Error analysis: where does the model fail and why?', 'Written 1-page summary of findings', '10-min slide presentation to the lab'],
-    loza: ['Compare Decision Tree vs KNN vs Random Forest side by side', 'Identify the top 5 most important sensor features', 'Visualize where the robot\'s model would go wrong in a real hallway', 'Present: "If this model ran on a real robot, what would happen?"'],
-    milestone: 'Presents a 10-minute slide deck to the lab — dataset overview, models tried, accuracy comparison, confusion matrix walkthrough, and what she\'d improve with more time.',
-    resources: 'TBA'
+    resources: 'Google Colab · <a href="https://colab.research.google.com/drive/1hvPeVT2Df-Yf1UXiht_TGMmv8m-d7Img?usp=sharing" target="_blank" style="color:var(--amber-800);font-weight:600;">Weeks 5–7 Colab notebook →</a>'
   }
 ];
 
@@ -606,8 +594,7 @@ const milestones = [
   { week: 'End of week 1', text: 'Opens Colab, runs cells, explains what a variable is and why order matters' },
   { week: 'End of week 2', text: 'Writes loops, conditionals, and functions in Colab without looking anything up' },
   { week: 'End of week 4', text: 'Explores the robot dataset and produces 4+ visualizations' },
-  { week: 'End of week 6', text: 'Trains two sklearn classifiers and reads a confusion matrix' },
-  { week: 'End of week 8', text: 'Presents full robot project to the lab — 10 min, slides, results' }
+  { week: 'End of week 7', text: 'Trains two sklearn classifiers and reads a confusion matrix' }
 ];
 
 // Build timeline
@@ -639,6 +626,34 @@ phases.forEach((ph, idx) => {
     </div>
   ` : '';
 
+  const topicsHtml = ph.topics ? `
+    <div style="margin-top:1rem;">
+      <div class="body-label" style="margin-bottom:8px;">Topics covered</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        ${ph.topics.map((t, i) => `
+          <div style="display:grid;grid-template-columns:80px 1fr;gap:10px;align-items:start;padding:0.65rem 0.85rem;background:var(--gray-50);border-radius:var(--radius);border:1px solid var(--border);">
+            <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--text-faint);padding-top:2px;letter-spacing:0.04em;">Topic ${i+1}</span>
+            <div style="font-size:13px;color:var(--text);line-height:1.5;">${t}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
+
+  const lozaHtml = ph.loza ? `
+    <div style="margin-top:1rem;">
+      <div class="body-label" style="margin-bottom:8px;">Loza's exercises</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        ${ph.loza.map((l, i) => `
+          <div style="display:grid;grid-template-columns:80px 1fr;gap:10px;align-items:start;padding:0.65rem 0.85rem;background:${ph.color.milestone};border-radius:var(--radius);border:1px solid ${ph.color.tagBorder};">
+            <span style="font-family:'DM Mono',monospace;font-size:10px;color:${ph.color.milestoneText};padding-top:2px;letter-spacing:0.04em;opacity:0.7;">Task ${i+1}</span>
+            <div style="font-size:13px;color:${ph.color.milestoneText};line-height:1.5;">${l}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
+
   block.innerHTML = `
     <button class="phase-trigger" aria-expanded="${ph.expanded ? 'true' : 'false'}" onclick="togglePhase(this)">
       <div class="phase-badge" style="background:${ph.color.badge};color:${ph.color.badgeText};">${ph.emoji}</div>
@@ -656,7 +671,7 @@ phases.forEach((ph, idx) => {
         <span class="week-bar-label">Timeline</span>
         <div class="week-bars">${bars}</div>
       </div>
-      ${conceptsHtml}
+      ${conceptsHtml}${topicsHtml}${lozaHtml}
       <div style="margin-top:1rem;display:flex;flex-direction:column;gap:8px;">
         <div class="milestone-flag" style="background:${ph.color.milestone};color:${ph.color.milestoneText};">
           <span class="flag-icon">🎯</span>
